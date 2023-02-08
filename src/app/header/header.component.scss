@@ -1,13 +1,14 @@
 .contentHeader {
   position: relative;
-  height: var(--height-header);
+  // height: var(--height-header);
+  height: fit-content;
   display: flex;
   margin-left: var(--left-102);
 }
 
 .mainImage {
   z-index: 1;
-  opacity: 0.5;
+  // opacity: 0.5;
   height: 705px;
   width: 500px; // originally 646px
   object-fit: cover;
@@ -74,8 +75,12 @@
 // settings adopted from figma therefore this class name
 .personShadowFigma {
   position: absolute;
-  left: 12px;
-  top: 221.62px;
+  // left: 12px;
+  // top: 221.62px;
+  // top: 176px;
+  height: 705px;
+  width: 705px;
+  object-fit: cover;
 }
 
 .letsTalkButton {
@@ -208,9 +213,9 @@
 }
 
 .linebox {
-  display: none;
+  // display: none;
   position: absolute;
-  top: calc(377.6px - var(--height-menu));
+  top: calc(400px - var(--height-menu));
   left: 0;
   right: 0;
   z-index: 1;
@@ -221,4 +226,8 @@
   background-image: url("./../../assets/img/line.png");
   background-repeat: round;
   background-size: cover;
+}
+
+.d-none {
+  display: none;
 }

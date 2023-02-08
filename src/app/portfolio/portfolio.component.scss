@@ -2,6 +2,7 @@
     position: relative;
     // height: var(--height-portfolio); 
     display: flex;
+    
     }
 
     .portfolioContainer {
@@ -66,8 +67,10 @@
         position: absolute;
         width: 800px;
         height: 950px;
-        left: -350px;
-        top: 900px;
+        // left: -350px;
+        left: 80px;
+        // top: 900px;
+        top: 1078px;
       }
       
       .myPortfolioShadow2 {
