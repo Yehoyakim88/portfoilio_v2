@@ -1,0 +1,17 @@
+<div id="my-skills" class="contentMySkills">
+    <div class="mainContainer">
+        <div class="skillsLeft">
+            <div *ngFor="let images of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="skillsImages">
+                <img class="skillImage"
+                 src="./../../assets/img/{{ images }}.png">
+                <span class="iconName">{{ iconNames[images-1] }}</span>
+            </div>
+        </div>
+        <div class="skillsDescription">
+            <span class="mySkillsHeader">My skills</span>
+            <span class="mySkillsSubText">I have grown my frontend developments skills that have allowed me to create different real projects.</span>
+            <a href="#contact" class="getInTouchButton">Get in touch</a>
+        </div>
+    </div>
+    <img src="./../../assets/img/L. blue 1.png" class="myClass">
+</div>

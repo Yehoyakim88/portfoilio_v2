@@ -1,0 +1,232 @@
+.contentContact {
+    position: relative;
+    // height: var(--height-contact);
+    height: fit-content;
+    // background-color: orange;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // font-size: 80px;
+    // font-family: 'Poppins';
+}
+
+// .contactHeaderLine {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+
+
+.contactHeader {
+    position: absolute;
+    top: var(--height-menu);
+    // left: var(--left-102);
+    left: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contactHeaderLine {
+    width: var(--width-line-5);
+    height: 0px;
+    border: 3px solid #4B47FF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .contactHeaderText {
+    width: 376px;
+    height: var(--height-contactHeaderText);
+    font-family: "Poppins Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .contactSubHeaderText {
+    display: flex;
+    font-family: "Poppins Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #ffffff;
+  }
+  
+  .contactMainSection {
+    display: flex;
+    // align-items: flex-start;
+    margin-top: calc(var(--height-contactHeaderText) + 85px + var(--height-menu));
+    margin-left: var(--left-102);
+  }
+  
+  .contactDescriptions {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    // margin-top: 85px;
+  }
+  
+  .contactDescParagraph {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 473px;
+  }
+  
+  .invitationContainer {
+    display: flex;
+  }
+  
+  .contactInvitationText {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  
+  .textBold {
+    font-family: "Poppins Bold";
+    font-weight: 400;
+    margin-left: 6px;
+  }
+
+  .contactRightSide {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactInputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+    // margin-right: 80px;
+  }
+  
+  .singleLineInput {
+    padding: 7.5px 25px;
+    width: 567px;
+    // width: 517px;
+    height: 35px;
+    margin-bottom: 35px;
+    background: #141d2f;
+    /* Style 1/style 1 b -blues/blues 1 */
+  
+    border: 1px solid #4b47ff;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+  
+    /* White */
+  
+    color: #ffffff;
+  
+    &:hover {
+      border: 1px solid #00bee8;
+    }
+  }
+  
+  .multiLineInput {
+    padding: 15px 25px;
+    // gap: 10px;
+    // isolation: isolate;
+    width: 567px;
+    height: 202px;
+    margin-bottom: 35px;
+  
+    /* Style 1/Syle 1 a - green purple/Blue bg */
+  
+    background: #141d2f;
+    /* Style 1/style 1 b -blues/blues 1 */
+  
+    border: 1px solid #4b47ff;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+  
+    /* White */
+  
+    color: #ffffff;
+  
+    &:hover {
+      border: 1px solid #00bee8;
+    }
+  }
+  
+  .sendMessageButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    padding: 15px 30px;
+    margin-bottom: 102px;
+    width: 253px;
+    height: 58px;
+    /* identical to box height, or 28px */
+  
+    background: #00bee8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 0;
+  
+    // width: 193px;
+    // height: 58px;
+  
+    /* Style 1/subtitles */
+  
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    /* identical to box height, or 28px */
+  
+    /* White */
+  
+    color: #ffffff;
+  
+    &:hover {
+      cursor: pointer;
+      background: #4b47ff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+  
+  .goUpButton {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    align-self: flex-end;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .dBlue3Image {
+    position: absolute;
+    top: 380px;
+    left: -40px;
+  }
+  
+  // .lineAboveFooter {
+  //   width: 98.675vw;
+  //   border: 2px solid #00bee8;
+  // }
+  

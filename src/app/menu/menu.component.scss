@@ -1,0 +1,80 @@
+@import "./../../assets/fonts/Poppins/fonts.scss";
+
+.contentMenu {
+    position: relative;
+    height: var(--height-menu);
+    // background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: 'Poppins';
+}
+
+.fixedMenu {
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 3;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 109.03px;
+  background-color: #141D2F;
+}
+
+.logoImage {
+  width: 300px;
+  height: 50px;  // originally 200px
+  object-fit: cover;
+  margin-left: 25px;
+}
+
+.menuContainer {
+  // position: absolute;
+  // top: 38.5px;
+  // right: 101px;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  margin-right: 100px;
+}
+
+a {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 23px;
+  color: #ffff;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+
+  &:hover {
+    color:#00bee8
+  }
+}
+
+// span {
+  
+//   color: white;
+// }
+
+
+
+.glow {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  // animation: glow 1s ease-in-out infinite alternate;
+}
+
+// @keyframes glow {
+//   from {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8e00e6, 0 0 40px #8e00e6, 0 0 50px #8e00e6, 0 0 60px #8e00e6, 0 0 70px #a960d6;
+//   }
+
+//   to {
+//     text-shadow: 0 0 20px #fff, 0 0 30px #a960d6, 0 0 40px #a960d6, 0 0 50px #a960d6, 0 0 60px #a960d6, 0 0 70px #a960d6, 0 0 80px #a960d6;
+//   }
+// }

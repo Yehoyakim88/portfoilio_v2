@@ -1,0 +1,10 @@
+.contentMailSent {
+    position: relative;
+    height: var(--height-mail-sent);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: 'Poppins';
+}

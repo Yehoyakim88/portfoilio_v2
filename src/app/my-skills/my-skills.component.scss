@@ -1,0 +1,123 @@
+.contentMySkills {
+    position: relative;
+    
+    height: var(--height-my-skills);
+    // background-color: aqua;
+    display: flex;
+    align-items: flex-start;
+    // justify-content: center;
+    // align-items: center;
+    // font-size: 80px;
+    // font-family: 'Poppins';
+}
+
+.mainContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-top: var(--height-menu);
+  }
+  
+  .skillsLeft {
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+    margin-left: 116px;
+  }
+  
+  .skillsImages {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 150px;
+    z-index: 1;
+    align-items: center;
+    color: white;
+  }
+  
+  .skillImage {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .iconName {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: 60px;
+  }
+  
+  .skillsDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .mySkillsHeader {
+    margin-right: 100px;
+    margin-bottom: 34px;
+    width: 471px;
+    height: 108px;
+    font-family: "Poppins Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120%;
+    text-align: end;
+    color: #ffffff;
+  }
+  
+  .mySkillsSubText {
+    margin-right: 100px;
+    margin-bottom: 57px;
+    width: 471px;
+    height: 38px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: end;
+    color: #ffffff;
+  }
+  
+  .getInTouchButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    width: 200px;
+    height: 58px;
+    background: #00bee8;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    text-decoration: none;
+    color: #ffffff;
+    &:hover {
+      background: #4b47ff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+  
+  .myClass {
+    position: absolute;
+    z-index: 1;
+    width: 428.59px;
+    height: 951.44px;
+    left: 0;
+    top: 1950px;
+  }
+  

@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #141D2F;
+    margin: 0;
+}
+
+:root {
+  --height-menu: 110px;
+  --height-header: 923px;
+  --height-about-me: 926px;
+  --height-my-skills: 870px;
+  --height-portfolio: 2810px;
+  --width-line-5: 50px;
+  --height-contact: 830px;
+  --height-contactHeaderText: 108px;
+  --height-footer: 291px;
+  --left-102: 82px;  // originally 102px
+}

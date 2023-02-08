@@ -1,0 +1,84 @@
+.contentPortfolio {
+    position: relative;
+    // height: var(--height-portfolio); 
+    display: flex;
+    }
+
+    .portfolioContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--height-menu);
+        margin-left: 380px;
+      }
+      
+      .headerContainer {
+        display: flex;
+        align-items: center;
+      }
+      
+      .portfolioHeader {
+        width: 389px;
+        height: 108px;
+        margin-left: 36px;
+        margin-right: 42px;
+      
+        display: flex;
+        align-items: center;
+      
+        font-family: "Poppins Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 120%;
+        text-align: center;
+        color: #ffffff;
+      }
+      
+      .subHeader {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        align-self: center;
+        color: #ffffff;
+      }
+      
+      .headerSubHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .line4 {
+        width: 446px;
+      }
+      
+      .myProjectsContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-right: 50px;
+      }
+      
+      .myPortfolioShadow {
+        position: absolute;
+        width: 800px;
+        height: 950px;
+        left: -350px;
+        top: 900px;
+      }
+      
+      .myPortfolioShadow2 {
+        position: absolute;
+        width: 428.59px;
+        height: 951.44px;
+        right: 0px;
+        top: 1500px;
+      }
+      
+      .d-none {
+        display: none;
+      }
+      
