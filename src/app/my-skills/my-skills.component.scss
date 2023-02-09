@@ -39,7 +39,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   &:hover {
-    filter: drop-shadow(0 0 1.5rem  #4b47ff);
+    filter: drop-shadow(0 0 1.5rem #4b47ff);
   }
 }
 
@@ -107,8 +107,11 @@
   font-weight: 400;
   font-size: 23px;
   line-height: 120%;
-  text-decoration: none;
-  color: #ffffff;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
   &:hover {
     background: #4b47ff;
     transition: 0.3s ease-in-out;

@@ -87,6 +87,7 @@
 }
 
 .aboutMeImageAndLine {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -104,14 +105,53 @@
 }
 
 .line7 {
-  width: fit-content;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 450px;
+  width: 280px;
   height: 0px;
   border: 2px solid #00bee8;
 }
 
+.blurImage {
+  // position: absolute;
+  height: 608px;
+  // left: 105.99%;
+  // right: 200px;
+  // top: 750px;
+
+  /* Style 1/style 1 b -blues/blues 1 */
+
+  background: #4b47ff;
+  /* gradient shadow */
+
+  filter: blur(46.5px);
+  transform: rotate(46.66deg);
+}
+
+// .blurImageRight {
+//   overflow-x: hidden;
+//   // display: none;
+//   position: absolute;
+//   // right: 0px;
+//   top: -100px;
+//   right: -200px;
+//   // top: 700px;
+//   z-index: 1;
+//   // width: auto;
+//   // height: 608px;
+//   // object-fit: cover;
+//   // transform: rotate(46.66deg);
+// }
+
 .blurImageRight {
   position: absolute;
   right: 0;
-  top: 800px;
+  top: 0px;
   z-index: 1;
+}
+
+.d-none {
+  display: none;
 }
