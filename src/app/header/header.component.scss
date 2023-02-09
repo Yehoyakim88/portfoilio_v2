@@ -1,3 +1,8 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .contentHeader {
   position: relative;
   // height: var(--height-header);
@@ -161,11 +166,7 @@
 }
 
 .vector1 {
-  position: absolute;
   z-index: 1;
-  top: 923px;
-  left: 0px;
-  right: 1340px;
   width: 100px;
   height: 0;
   border: 2px solid #4b47ff;
@@ -176,12 +177,11 @@
 }
 
 .socialMedia {
-  position: absolute;
+  position: relative;
+  margin-top: 112px;
   z-index: 1;
-  top: 908.37px;
-  left: 122px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -213,19 +213,16 @@
 }
 
 .linebox {
-  // display: none;
   position: absolute;
   top: calc(400px - var(--height-menu));
-  left: 0;
+  left: -100px;
   right: 0;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   height: 1079px;
-  -o-object-fit: fill;
-  object-fit: fill;
   background-image: url("./../../assets/img/line.png");
-  background-repeat: round;
-  background-size: cover;
+  // background-repeat: round;
+  // background-size: cover;
 }
 
 .d-none {
