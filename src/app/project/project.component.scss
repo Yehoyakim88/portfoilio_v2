@@ -1,6 +1,7 @@
 .contentProject {
     position: relative;
     height: fit-content;
+    margin-left: 225px;
 }
 
 .aProject {
@@ -8,6 +9,7 @@
     flex-direction: row;
     // align-items: center;
     margin-bottom: 200px;
+    margin-left: 88px;
     // width: 400px;
     // margin-right: 100px;
   }
@@ -15,16 +17,19 @@
   .aProjectReverse {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
     // align-items: center;
     margin-bottom: 200px;
-    // margin-right: 100px;
+    margin-left: calc(88px + 0px);
+    // padding-right: 100px;
   }
   
   .projectPreviewImage {
-    width: 400px;
+    // width: 400px;
+    height: 300px;
     z-index: 1;
     // height: 400px;
-    // object-fit: cover;
+    object-fit: cover;
   }
   
   .descriptionContainer {
@@ -37,62 +42,43 @@
   .descriptionContainerReverse {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    // margin-right: 100px;
   }
   
   .projectTitle {
     width: 196px;
     height: 42.82px;
-  
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
-    /* or 38px */
-  
     margin-bottom: 15px;
-  
-    /* Style 1/style 1 b -blues/blues 1 */
-  
     color: #4b47ff;
   }
   
   .projectTechnologies {
     width: 488px;
     height: 28px;
-  
-    /* Style 1/subtitles */
-  
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 120%;
-    /* identical to box height, or 28px */
-  
-    /* Style 1/style 1 b -blues/blues 2 */
     margin-bottom: 15px;
   
     color: #00bee8;
   }
   
   .projectDescription {
-    width: fit-content;
+    width: 375px;
     height: 57px;
     margin-right: 40px;
-  
-    /* Style 1/body */
-  
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    /* or 19px */
-  
-    /* White */
-  
     color: #ffffff;
     text-align: justify;
   }
@@ -101,7 +87,7 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 75px;
   }
   
   .liveTestButton {

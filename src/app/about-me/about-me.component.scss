@@ -47,17 +47,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
-
-  /* White */
-
   color: #ffffff;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
+  text-align: justify;
+}
+
+.justifiedText {
+  text-align: justify;
 }
 
 .personalThings {
@@ -68,27 +66,16 @@
   height: fit-content;
   display: flex;
   align-items: flex-start;
-
-  /* Style 1/body */
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
-
-  /* White */
-
   color: #ffffff;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
   margin-bottom: 35px;
-
   span {
     margin-left: 34px;
   }
@@ -117,15 +104,8 @@
 }
 
 .line7 {
-  // position: absolute;
-  // width: 258px;
   width: fit-content;
   height: 0px;
-  // top: 220px;
-  // left: 1058px;
-
-  /* Style 1/style 1 b -blues/blues 2 */
-
   border: 2px solid #00bee8;
 }
 

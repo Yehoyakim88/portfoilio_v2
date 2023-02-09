@@ -1,14 +1,26 @@
 .contentFooter {
-  //   margin-top: 135px;
+  z-index: 2;
   padding-left: var(--left-102);
   position: relative;
-  height: var(--height-footer);
-  //   height: fit-content;
-  background-color: #141D2F;
+  height: fit-content;              // alternatively: height: var(--height-footer);
+  background-color: #141d2f;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid #00bee8;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content; 
 }
 
 .logoAndImprintContainer {
@@ -18,7 +30,6 @@
 }
 
 .logoImage {
-  // margin-left: 100px;
   width: 200px;
   height: 40px;
   object-fit: cover;
@@ -33,27 +44,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
-
-  /* White */
-
   color: #ffffff;
 }
 
 .copyrightText {
-  /* Style 1/subtitles */
-  //   margin-left: 322px;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
   line-height: 120%;
-  /* identical to box height, or 28px */
-
-  /* White */
-
   color: #ffffff;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    color:#00bee8;
+  }
 }
 
 .socialMedia {
