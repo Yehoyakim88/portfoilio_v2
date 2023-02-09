@@ -16,7 +16,7 @@
 
 .headerContainer {
   position: absolute;
-  top: 0;
+  top: 0 + 100px;
   right: 0;
   display: flex;
   align-items: center;
@@ -82,7 +82,8 @@
   width: 428.59px;
   height: 951.44px;
   right: 0px;
-  top: 1500px;
+  // top: 1500px;
+  top: 1550px;
 }
 
 .d-none {
