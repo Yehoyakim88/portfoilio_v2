@@ -2,6 +2,7 @@
 
 .contentMenu {
     position: relative;
+    width: 100vw;
     height: var(--height-menu);
     // background-color: dimgray;
     display: flex;
@@ -23,6 +24,23 @@
   background-color: #141D2F;
 }
 
+.fixedMenuMobile {
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 109.03px;
+  background-color: #141D2F;
+}
+
+.logoLink {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .logoImage {
   width: 300px;
   height: 50px;  // originally 200px
@@ -30,12 +48,15 @@
   margin-left: 25px;
 }
 
+.burgerMenuImage {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
 .menuContainer {
-  // position: absolute;
-  // top: 38.5px;
-  // right: 101px;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   margin-right: 100px;
 }
@@ -66,12 +87,15 @@ a {
   // animation: glow 1s ease-in-out infinite alternate;
 }
 
-// @keyframes glow {
-//   from {
-//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8e00e6, 0 0 40px #8e00e6, 0 0 50px #8e00e6, 0 0 60px #8e00e6, 0 0 70px #a960d6;
-//   }
 
-//   to {
-//     text-shadow: 0 0 20px #fff, 0 0 30px #a960d6, 0 0 40px #a960d6, 0 0 50px #a960d6, 0 0 60px #a960d6, 0 0 70px #a960d6, 0 0 80px #a960d6;
-//   }
-// }
+
+.logoImage {
+  margin-left: 0 !important;
+}
+
+@media (max-width: 600) {
+  .contentMenu {
+    width: 100vw !important;
+  }
+
+}

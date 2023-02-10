@@ -228,3 +228,43 @@
 .d-none {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .contentHeader {
+    flex-direction: column !important;
+    margin-left: 0 !important;
+    margin-top: 0px !important;
+  }
+
+  .headline {
+    z-index: 2;
+    margin-top: 0px !important;
+  }
+
+  .mainImage {
+    height: 447.82px !important;
+    width: unset !important;
+  }
+
+  .personShadowFigma {
+    height: 447.82px !important;
+    width: unset !important;
+  }
+
+  .rotateLeft90 {
+    font-size: 32px !important;
+    margin-top: 30px !important;
+    width: 72px !important;
+    height: 33px !important;
+  }
+
+  .myName {
+    font-size: 45px !important;
+    width: 310px !important;
+    height: 54px !important;
+  }
+
+  .profession {
+    font-size: 29px !important;
+  }
+}

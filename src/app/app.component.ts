@@ -29,12 +29,9 @@ export class AppComponent {
       };
     };
 
-    let menuContainer: HTMLElement = document.getElementById(
-      "menu"
-    ) as HTMLElement;
-    let contentHeader: HTMLElement = document.getElementById(
-      "home"
-    ) as HTMLElement;
+    let menuContainer: HTMLElement = document.getElementById("menu") as HTMLElement;
+    let menuMobile: HTMLElement = document.getElementById("menu-mobile") as HTMLElement;
+    let contentHeader: HTMLElement = document.getElementById("home") as HTMLElement;
     if (
       navigator.userAgent.match(/Android/i) ||
       navigator.userAgent.match(/webOS/i) ||
@@ -46,14 +43,16 @@ export class AppComponent {
     ) {
       menuContainer.classList.add("d-none");
       menuContainer.setAttribute("display", "none !important");
+      menuMobile.classList.remove("d-none");
       contentHeader.setAttribute("flex-direction", "column");
       contentHeader.setAttribute("z-index", "2");
     } else {
       // test
       menuContainer.classList.add("d-none");
+      menuMobile.classList.remove("d-none");
       console.log("No mobile device found. Desktop mode.");
-      contentHeader.setAttribute("style", "z-index: 2");
-      contentHeader.setAttribute("style", "flex-direction: column");
+      // contentHeader.setAttribute("style", "z-index: 2");
+      // contentHeader.setAttribute("style", "flex-direction: column");
       // contentHeader.style.flexDirection = column;
     }
   }
