@@ -1,7 +1,8 @@
 @import "./../../assets/fonts/Poppins/fonts.scss";
 
 .contentMenu {
-    position: relative;
+    position: fixed;
+    z-index: 3;
     width: 100vw;
     height: var(--height-menu);
     // background-color: dimgray;
@@ -13,8 +14,8 @@
 }
 
 .fixedMenu {
-  position: fixed;
-  top: 0;
+  // position: fixed;
+  // top: 0;
   display: flex;
   z-index: 3;
   justify-content: space-between;

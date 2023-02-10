@@ -81,6 +81,11 @@
   }
 }
 
+.descText {
+  margin-left: 42.76px;
+  text-align: justify;
+}
+
 .thisIsMe {
   display: flex;
   align-items: center;
@@ -165,8 +170,7 @@
 @media (max-width: 600px) {
   .contentAboutMe {
     margin-top: 105px !important;
-    width: 100vw !important;
-    
+    margin-left: 26px !important;    
   }
 
   .aboutMeHeader {
@@ -177,14 +181,13 @@
 
   .aboutMeSection {
     margin-top: 0px !important;
-    // width: 100vw !important;
-    margin-left: 26px !important;
-    
+    margin-left: unset !important;
+    width: unset !important;
   }
 
   .aboutMeText {
-    // width: 338px !important;
-    width: 84vw !important;
+    width: 338px !important;
+    // width: 84vw !important;
     height: 133px !important;
   }
 
@@ -193,9 +196,15 @@
   }
 
   .personalThings {
-    width: 92vw !important;
+    width: 78vw !important;
     margin-top: 35px !important;
-    margin-left: 0px !important;;
+    margin-left: 0px !important;
+
+    p {
+      margin-left: 42.76px;
+      width: 252px;
+      text-align: justify;
+    }
   }
 
   .line7 {
@@ -205,6 +214,6 @@
   .blurImageRight {
     height: 415.93px !important;
     top: -120px !important;
-    right: -40px !important;
+    right: 0px !important;
   }
 }

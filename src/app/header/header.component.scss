@@ -249,11 +249,13 @@
 
   .personShadowFigma {
     height: 447.82px !important;
-    width: unset !important;
+    // width: unset !important;
+    // width: 100vw !important;
+    width: 97vw !important;
   }
 
   .introduceMeText {
-    width: 280px !important;
+    width: 256px !important;
     height: 54px !important;
     font-size: unset !important;
   }
@@ -267,7 +269,7 @@
 
   .myName {
     font-size: 32px !important;
-    width: 310px !important;
+    width: 256px !important;
     height: 54px !important;
     margin-bottom: 15px !important;
     margin-top: 5px !important;
@@ -275,6 +277,7 @@
 
   .profession {
     font-size: 24px !important;
+    width: unset !important;
   }
 
   .letsTalkButton {
@@ -283,7 +286,6 @@
     height: 49px !important;
     align-self: unset !important;
     margin-left: 40px !important;
-    // margin-bottom: 55px !important;
   }
 
   .scrollContainer {

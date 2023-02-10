@@ -2,7 +2,7 @@
   z-index: 2;
   padding-left: var(--left-102);
   position: relative;
-  height: fit-content;              // alternatively: height: var(--height-footer);
+  height: fit-content; // alternatively: height: var(--height-footer);
   background-color: #141d2f;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: fit-content; 
+  height: fit-content;
 }
 
 .logoAndImprintContainer {
@@ -47,6 +47,16 @@
   color: #ffffff;
 }
 
+.imprintLinkMobile {
+  display: none;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 33px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .copyrightText {
   font-family: "Poppins";
   font-style: normal;
@@ -57,7 +67,7 @@
   text-decoration: none;
   &:hover {
     cursor: pointer;
-    color:#00bee8;
+    color: #00bee8;
   }
 }
 
@@ -73,4 +83,45 @@
   margin-left: 42px;
   z-index: 1;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .contentFooter {
+    flex-direction: column;
+    padding-left: unset !important;
+    height: 380px !important;
+    justify-content: unset !important;
+  }
+
+  .copyrightText {
+    width: 240px !important;
+    height: 28px !important;
+    font-size: 23px !important;
+    text-align: center !important;
+    margin-top: 55px !important;
+  }
+
+  .imprintLink {
+    display: none !important;
+    width: 91px !important;
+    height: 19px !important;
+    font-size: 16px !important;
+    font-family: 'Poppins';
+    font-weight: 400;
+  }
+
+  .imprintLinkMobile {
+    display: flex;
+  }
+
+  .socialMedia {
+    margin-top: 28.37px !important;
+    margin-right: 0px !important;
+    width: 236px !important;
+    justify-content: space-around;
+  }
+
+  .socialMediaImages {
+    margin-left: 0px !important;
+  }
 }
