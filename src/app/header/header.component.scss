@@ -8,12 +8,12 @@
   // height: var(--height-header);
   height: fit-content;
   display: flex;
+  flex-direction: row;
   margin-left: var(--left-102);
 }
 
 .mainImage {
   z-index: 1;
-  // opacity: 0.5;
   height: 705px;
   width: 500px; // originally 646px
   object-fit: cover;
