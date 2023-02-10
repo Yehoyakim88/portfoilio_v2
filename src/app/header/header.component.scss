@@ -238,7 +238,8 @@
 
   .headline {
     z-index: 2;
-    margin-top: 0px !important;
+    margin-top: 22px !important;
+    height: 164px !important;
   }
 
   .mainImage {
@@ -251,6 +252,12 @@
     width: unset !important;
   }
 
+  .introduceMeText {
+    width: 280px !important;
+    height: 54px !important;
+    font-size: unset !important;
+  }
+
   .rotateLeft90 {
     font-size: 32px !important;
     margin-top: 30px !important;
@@ -259,12 +266,44 @@
   }
 
   .myName {
-    font-size: 45px !important;
+    font-size: 32px !important;
     width: 310px !important;
     height: 54px !important;
+    margin-bottom: 15px !important;
+    margin-top: 5px !important;
   }
 
   .profession {
-    font-size: 29px !important;
+    font-size: 24px !important;
+  }
+
+  .letsTalkButton {
+    margin-top: 26px !important;
+    width: 133px !important;
+    height: 49px !important;
+    align-self: unset !important;
+    margin-left: 40px !important;
+    // margin-bottom: 55px !important;
+  }
+
+  .scrollContainer {
+    display: none !important;
+  }
+
+  .socialMediaEmail {
+    display: none !important;
+  }
+
+  .vector1 {
+    width: 64px !important;
+  }
+
+  .socialMedia {
+    margin-top: 55px !important;
+  }
+
+  .linebox {
+    width: unset !important;
+    top: calc(126px - var(--height-menu));
   }
 }

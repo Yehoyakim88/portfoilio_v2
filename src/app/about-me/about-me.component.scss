@@ -155,3 +155,56 @@
 .d-none {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .aboutMeImage {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentAboutMe {
+    margin-top: 105px !important;
+    width: 100vw !important;
+    
+  }
+
+  .aboutMeHeader {
+    width: 226px !important;
+    height: 54px !important;
+    font-size: 45px !important;
+  }
+
+  .aboutMeSection {
+    margin-top: 0px !important;
+    // width: 100vw !important;
+    margin-left: 26px !important;
+    
+  }
+
+  .aboutMeText {
+    // width: 338px !important;
+    width: 84vw !important;
+    height: 133px !important;
+  }
+
+  .justifiedText {
+    margin-right: 26px !important;
+  }
+
+  .personalThings {
+    width: 92vw !important;
+    margin-top: 35px !important;
+    margin-left: 0px !important;;
+  }
+
+  .line7 {
+    display: none !important;
+  }
+
+  .blurImageRight {
+    height: 415.93px !important;
+    top: -120px !important;
+    right: -40px !important;
+  }
+}
