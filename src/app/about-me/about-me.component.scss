@@ -1,18 +1,17 @@
 .contentAboutMe {
   position: relative;
-  z-index: 1;
   height: var(--height-about-me);
   background-color: none;
   display: flex;
   font-family: "Poppins";
-  width: 338px;
 }
 
 .aboutMeSection {
+  z-index: 1;
   margin-top: 158px;
   margin-left: var(--left-102);
-  // width: 471px;
-  // height: 114px;
+  width: 471px;
+  height: 114px;
   display: flex;
   flex-direction: column;
   font-family: "Poppins";
@@ -21,10 +20,14 @@
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .aboutMeHeader {
-  // width: 452px;
+  z-index: 1;
+  width: 452px;
   height: 108px;
   margin-bottom: 35px;
   font-family: "Poppins Bold";
@@ -36,7 +39,7 @@
 }
 
 .aboutMeText {
-  // width: 471px;
+  width: 471px;
   height: 114px;
   margin-bottom: 35px;
   font-family: "Poppins";
@@ -45,6 +48,10 @@
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-align: justify;
 }
 
 .justifiedText {
@@ -52,7 +59,7 @@
 }
 
 .personalThings {
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .personalThing {
@@ -65,6 +72,9 @@
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
   margin-bottom: 35px;
   span {
     margin-left: 34px;
@@ -72,7 +82,7 @@
 }
 
 .descText {
-  // margin-left: 42.76px;
+  margin-left: 42.76px;
   text-align: justify;
 }
 
@@ -88,6 +98,7 @@
 }
 
 .aboutMeImage {
+  z-index: 1;
   width: 453px;
   // width: 60vw;
   height: 453px;
@@ -151,18 +162,16 @@
 }
 
 @media (max-width: 600px) {
-  .aboutMeImage {
-    display: none !important;
-  }
-}
-
-@media (max-width: 600px) {
   .contentAboutMe {
     margin-top: 105px !important;
     height: unset !important;
     width: unset !important;
     position: initial !important;
     flex-direction: column;
+  }
+
+  .aboutMeImage {
+    display: none !important;
   }
 
   .aboutMeHeader {

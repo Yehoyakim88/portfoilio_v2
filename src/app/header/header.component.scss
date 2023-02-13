@@ -10,65 +10,111 @@
   display: flex;
   flex-direction: row;
   margin-left: var(--left-102);
+  margin-top: var(--height-menu);
 }
 
 .mainImage {
+  // display: none;
   z-index: 1;
-  height: 705px;
-  width: 500px; // originally 646px
+  // height: 705px;
+  height: 600px;
+  // width: 500px; // originally 646px
   object-fit: cover;
 }
 
 .headline {
+  z-index: 2;
   display: flex;
+  flex-direction: column;
+  // align-items: center;
   margin-top: 188px;
   height: fit-content;
-  align-items: flex-start;
+  // align-items: flex-start;
 }
 
 .introduceMeText {
   display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  align-items: center;
+  // font-family: "Poppins";
+  // font-size: 64px;
+  // font-weight: 400;
+  // color: #ffff;
+  height: fit-content;
+}
+
+.nameAndProfession {
+  display: flex;
   flex-direction: column;
+}
+
+.iam {
   font-family: "Poppins";
-  font-size: 64px;
+  font-style: normal;
   font-weight: 400;
-  color: #ffff;
+  // font-size: 64px;
+  font-size: 5.25vw;
+  // font-size: 7em;
+  // line-height: 120%;
+  color: #ffffff;
+  writing-mode: vertical-lr;
+  text-align: center;
+  transform: rotate(-180deg);
+  text-indent: -12px;
 }
 
 .myName {
-  width: 640px;
-  height: 108px;
+  z-index: 2;
+  // width: 640px;
+  // width: fit-content;
+  // height: 108px;
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
+  // font-size: 90px;
+  font-size: 7vw;
+  // font-size: 7em;
   line-height: 120%;
   color: #ffffff;
 }
 
 .profession {
-  width: 619px;
-  height: 70px;
+  z-index: 2;
+  margin-top: -10px;
+  // width: 619px;
+  // width: 76px;
+  // height: 70px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
+  // font-size: 58px;
+  font-size: 5vw;
+  // font-size: 4em;
   line-height: 120%;
   color: #4b47ff;
 }
 
 .rotateLeft90 {
   // display: none;
-  margin-top: 60px;
-  width: 152px;
-  height: 63px;
+  // margin-top: 60px;
+  // width: 178px;
+  height: 100px;
+  // height: fit-content;
+  z-index: 2;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
-  // line-height: 120%;
+  line-height: 120%;
   color: #ffffff;
-  transform: rotate(-90deg);
+  // transform: rotate(-90deg);
+  // writing-mode:horizontal-tb;
+  text-align: center;
+  transform-origin: center;
+  transform: rotate(270deg);
+
+  // transform-origin: center center;
 }
 
 .personShadow {
@@ -98,6 +144,49 @@
   // padding: 15px 15px 15px 0px;
   padding: 15px 30px;
   margin-top: 44px;
+  width: 165px;
+  height: 58px;
+  background: #00bee8;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+
+  a {
+    width: 105px;
+    height: 28px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: #ffffff;
+    text-decoration: none;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &:hover {
+    background: #4b47ff;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+  }
+}
+
+.letsTalkButtonMobile {
+  display: none;
+  z-index: 2;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  // padding: 15px 15px 15px 0px;
+  padding: 15px 30px;
+  // margin-top: 44px;
   width: 165px;
   height: 58px;
   background: #00bee8;
@@ -222,7 +311,7 @@
   left: -100px;
   right: 0;
   z-index: 1;
-  width: 100vw;
+  // width: 100vw;
   height: 1079px;
   // background-image: url("./../../assets/img/line.png");
   // background-repeat: round;
@@ -268,9 +357,55 @@
   display: none;
 }
 
+@media (max-width: 1300px) {
+  .iam {
+    font-size: 4.5vw !important;
+  }
+  .myName {
+    font-size: 6vw !important;
+  }
+  .profession {
+    font-size: 4.5vw !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .iam {
+    font-size: 3.8vw !important;
+  }
+  .myName {
+    font-size: 5vw !important;
+  }
+  .profession {
+    font-size: 4.25vw !important;
+  }
+}
+
+@media (max-width: 1025px) {
+  .iam {
+    font-size: 3.5vw !important;
+  }
+  .myName {
+    font-size: 4.75vw !important;
+  }
+  .profession {
+    font-size: 4vw !important;
+  }
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+  .profession {
+    font-size: 3vw !important;
+  }
+}
+
 @media (max-width: 600px) {
   .contentHeader {
-    flex-direction: column !important;
+    // flex-direction: column !important;
     margin-left: 0 !important;
     margin-top: 0px !important;
   }
@@ -278,7 +413,7 @@
   .headline {
     z-index: 2;
     margin-top: 22px !important;
-    height: 164px !important;
+    // height: 164px !important;
   }
 
   .mainImage {
@@ -293,38 +428,43 @@
     width: unset !important;
   }
 
-  .introduceMeText {
-    width: 256px !important;
-    height: 54px !important;
-    font-size: unset !important;
-  }
+  // .introduceMeText {
+  //   width: unset !important;
+  //   height: 54px !important;
+  //   font-size: unset !important;
+  // }
 
-  .rotateLeft90 {
-    font-size: 32px !important;
-    margin-top: 30px !important;
-    width: 72px !important;
-    height: 33px !important;
-  }
+  // .rotateLeft90 {
+  //   font-size: 32px !important;
+  //   margin-top: 30px !important;
+  //   width: unset !important;
+  //   height: unset !important;
+  // }
 
-  .myName {
-    font-size: 32px !important;
-    width: 256px !important;
-    height: 54px !important;
-    margin-bottom: 15px !important;
-    margin-top: 5px !important;
-  }
+  // .myName {
+  //   font-size: 29px !important;
+  //   width: unset !important;
+  //   height: 54px !important;
+  //   margin-bottom: 0px !important;
+  //   margin-top: 5px !important;
+  // }
 
-  .profession {
-    font-size: 24px !important;
-    width: unset !important;
-  }
+  // .profession {
+  //   font-size: 29px !important;
+  //   width: unset !important;
+  // }
 
   .letsTalkButton {
+    display: none !important;
     margin-top: 26px !important;
     width: 133px !important;
     height: 49px !important;
     align-self: unset !important;
     margin-left: 40px !important;
+  }
+
+  .letsTalkButtonMobile {
+    display: flex !important;
   }
 
   .scrollContainer {

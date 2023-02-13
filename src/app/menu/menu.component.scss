@@ -3,7 +3,7 @@
 .contentMenu {
     position: fixed;
     z-index: 3;
-    width: 100vw;
+    // width: 100vw;
     height: var(--height-menu);
     // background-color: dimgray;
     display: flex;
@@ -28,7 +28,7 @@
 .fixedMenuMobile {
   position: fixed;
   top: 0;
-  display: flex;
+  display: none;
   z-index: 3;
   justify-content: space-between;
   align-items: center;
@@ -95,8 +95,13 @@ a {
 }
 
 @media (max-width: 600) {
-  .contentMenu {
-    width: 100vw !important;
+
+  .fixedMenu {
+    display: none !important;
+  }
+
+  .fixedMenuMobile {
+    display: flex !important;
   }
 
 }

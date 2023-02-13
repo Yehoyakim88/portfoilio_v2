@@ -48,8 +48,8 @@ export class AppComponent {
       contentHeader.setAttribute("z-index", "2");
     } else {
       // test
-      menuContainer.classList.add("d-none");
-      menuMobile.classList.remove("d-none");
+      // menuContainer.classList.add("d-none");
+      // menuMobile.classList.remove("d-none");
       console.log("No mobile device found. Desktop mode.");
       // contentHeader.setAttribute("style", "z-index: 2");
       // contentHeader.setAttribute("style", "flex-direction: column");
