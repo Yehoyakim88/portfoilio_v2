@@ -159,6 +159,7 @@
 @media (max-width: 600px) {
   .contentAboutMe {
     margin-top: 105px !important;
+    height: unset !important;
     width: unset !important;
     position: initial !important;
     flex-direction: column;

@@ -191,6 +191,10 @@
   cursor: pointer;
 }
 
+.socialMediaImageMobile {
+  margin-left: 0px;
+}
+
 .socialMediaEmail {
   width: fit-content;
   height: 28px;
@@ -333,10 +337,16 @@
 
   .vector1 {
     width: 64px !important;
+    position: absolute;
+    left: -28px;
   }
 
   .socialMedia {
     margin-top: 55px !important;
+  }
+
+  .socialMediaImageMobile {
+    margin-left: 84px !important;
   }
 
   .linebox {
