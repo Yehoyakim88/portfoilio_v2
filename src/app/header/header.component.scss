@@ -220,9 +220,44 @@
   z-index: 1;
   width: 100vw;
   height: 1079px;
-  background-image: url("./../../assets/img/line.png");
+  // background-image: url("./../../assets/img/line.png");
   // background-repeat: round;
   // background-size: cover;
+}
+
+.lineboxFigma {
+  position: absolute;
+  height: 467.43px;
+  left: 19.93%;
+  right: -80.64%;
+  top: 345.09px;
+
+  /* Style 1/Syle 1 a - green purple/Gradient */
+
+  background: linear-gradient(
+    165.69deg,
+    #1a2743 37.75%,
+    #27334b 43.25%,
+    #141d2f 70.18%
+  );
+}
+
+.gradientThing {
+  position: absolute;
+  height: 1078.6px;
+  left: -0.14%;
+  right: 0%;
+  top: -26px;
+
+  /* Style 1/Syle 1 a - green purple/Gradient b */
+
+  background: radial-gradient(
+      102.53% 81.55% at 46.74% 3.94%,
+      #1a2743 0.37%,
+      #27334b 13.54%,
+      #141d2f 71.91%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 
 .d-none {
@@ -243,15 +278,15 @@
   }
 
   .mainImage {
-    height: 447.82px !important;
-    width: unset !important;
+    height: var(--height-main-image-mobile) !important;
+    width: 556px !important;
   }
 
   .personShadowFigma {
     height: 447.82px !important;
     // width: unset !important;
     // width: 100vw !important;
-    width: 97vw !important;
+    width: unset !important;
   }
 
   .introduceMeText {
@@ -305,7 +340,14 @@
   }
 
   .linebox {
-    width: unset !important;
-    top: calc(126px - var(--height-menu));
+    // position: initial;
+    width: 556px !important;
+    // width: unset !important;
+    // height: 600px !important;
+    // top: calc(126px - var(--height-menu) - var(--height-main-image-mobile));
+    top: calc(372px - var(--height-menu));
+    left: 0px !important;
+    // width: 626.76px !important;
+    height: 467.43px !important;
   }
 }

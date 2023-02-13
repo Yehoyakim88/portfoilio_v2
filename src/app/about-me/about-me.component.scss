@@ -1,17 +1,18 @@
 .contentAboutMe {
   position: relative;
+  z-index: 1;
   height: var(--height-about-me);
   background-color: none;
   display: flex;
   font-family: "Poppins";
+  width: 338px;
 }
 
 .aboutMeSection {
-  z-index: 1;
   margin-top: 158px;
   margin-left: var(--left-102);
-  width: 471px;
-  height: 114px;
+  // width: 471px;
+  // height: 114px;
   display: flex;
   flex-direction: column;
   font-family: "Poppins";
@@ -20,14 +21,10 @@
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .aboutMeHeader {
-  z-index: 1;
-  width: 452px;
+  // width: 452px;
   height: 108px;
   margin-bottom: 35px;
   font-family: "Poppins Bold";
@@ -39,7 +36,7 @@
 }
 
 .aboutMeText {
-  width: 471px;
+  // width: 471px;
   height: 114px;
   margin-bottom: 35px;
   font-family: "Poppins";
@@ -48,10 +45,6 @@
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  text-align: justify;
 }
 
 .justifiedText {
@@ -72,9 +65,6 @@
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin-bottom: 35px;
   span {
     margin-left: 34px;
@@ -82,7 +72,7 @@
 }
 
 .descText {
-  margin-left: 42.76px;
+  // margin-left: 42.76px;
   text-align: justify;
 }
 
@@ -98,7 +88,6 @@
 }
 
 .aboutMeImage {
-  z-index: 1;
   width: 453px;
   // width: 60vw;
   height: 453px;
@@ -170,7 +159,9 @@
 @media (max-width: 600px) {
   .contentAboutMe {
     margin-top: 105px !important;
-    margin-left: 26px !important;    
+    width: unset !important;
+    position: initial !important;
+    flex-direction: column;
   }
 
   .aboutMeHeader {
@@ -181,30 +172,36 @@
 
   .aboutMeSection {
     margin-top: 0px !important;
-    margin-left: unset !important;
-    width: unset !important;
+    margin-left: 0px !important;
+    // margin-left: calc(-100vw / 2 + 0px / 2) !important;
+    // margin-right: calc(-100vw / 2 + 0px / 2) !important;
+    // width: unset !important;
   }
 
-  .aboutMeText {
-    width: 338px !important;
-    // width: 84vw !important;
-    height: 133px !important;
-  }
+  // .aboutMeText {
+  //   // width: unset !important;
+  //   // width: 84vw !important;
+  //   // height: 133px !important;
+  // }
 
-  .justifiedText {
-    margin-right: 26px !important;
-  }
+  // .justifiedText {
+  //   margin-right: 26px !important;
+  // }
 
   .personalThings {
-    width: 78vw !important;
-    margin-top: 35px !important;
+    // width: 78vw !important;
     margin-left: 0px !important;
 
     p {
       margin-left: 42.76px;
-      width: 252px;
+      margin-top: 0px;
+      margin-bottom: 35px;
       text-align: justify;
     }
+  }
+
+  .personalThing {
+    margin-bottom: 0px !important;
   }
 
   .line7 {
