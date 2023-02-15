@@ -1,6 +1,11 @@
 .main {
+  font-family: "Poppins";
   display: flex;
   flex-direction: column;
+  //added from test code
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-bottom: 100px;
 }
 
 .contentHeader {
@@ -20,6 +25,21 @@
   height: 600px;
   // width: 500px; // originally 646px
   object-fit: cover;
+}
+
+.myMainImage {
+  // position: relative;
+  width: 42.86vw;
+  height: 48.96vw;
+  object-fit: cover;
+}
+
+.mainPortrait {
+  position: relative;
+  width: 42.86vw;
+  height: 48.96vw;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .headline {
@@ -47,6 +67,7 @@
 .nameAndProfession {
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .iam {
@@ -64,6 +85,35 @@
   text-indent: -12px;
 }
 
+.iam2 {
+  z-index: 2;
+  position: absolute;
+  top: 208px;
+  right: 8px;
+  color: #ffffff;
+  font-weight: 400;
+  // font-size: 4.45vw;
+  font-size: 4.65vw;
+  line-height: 120%;
+  writing-mode: vertical-lr;
+  text-align: center;
+  transform: rotate(-180deg);
+  // text-indent: -12px;
+}
+
+.iam2Mobile {
+  display: none;
+  z-index: 2;
+  color: #ffffff;
+  font-weight: 400;
+  // font-size: 4.45vw;
+  font-size: 4.65vw;
+  line-height: 120%;
+  writing-mode: vertical-lr;
+  text-align: center;
+  transform: rotate(-180deg);
+}
+
 .myName {
   z-index: 2;
   // width: 640px;
@@ -75,6 +125,16 @@
   // font-size: 90px;
   font-size: 7vw;
   // font-size: 7em;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.name {
+  // z-index: 2;
+  font-family: "Poppins Bold";
+  font-weight: 700;
+  /* font-size: 90px; */
+  font-size: 6.25vw;
   line-height: 120%;
   color: #ffffff;
 }
@@ -91,6 +151,15 @@
   // font-size: 58px;
   font-size: 5vw;
   // font-size: 4em;
+  line-height: 120%;
+  color: #4b47ff;
+}
+
+.jobTitle {
+  // z-index:2;
+  font-weight: 400;
+  // font-size: 58px;
+  font-size: 4.0278vw;
   line-height: 120%;
   color: #4b47ff;
 }
@@ -129,8 +198,9 @@
   // left: 12px;
   // top: 221.62px;
   // top: 176px;
-  height: 705px;
-  width: 705px;
+  // height: 705px;
+  height: 48.96vw;
+  // width: 705px;
   object-fit: cover;
 }
 
@@ -221,17 +291,30 @@
 }
 
 .scrollContainer {
+  position: absolute;
+  // top: 765px;
+  top: 53.125vw;
+  z-index: 2;
+  align-self: flex-end;
+  // display: flex;
+  // transform: rotate(90deg);
   &:hover {
     cursor: pointer;
   }
 }
 
+.linkContainer {
+  display: flex;
+  align-items: center;
+}
+
 .scrollDown {
   cursor: pointer;
-  position: absolute;
+  // position: absolute;
   z-index: 2;
-  top: 800px;
-  right: 36px;
+  // top: 800px;
+  // right: 36px;
+  margin-right: 8px;
   width: 133px;
   height: 28px;
   font-family: "Poppins";
@@ -239,19 +322,23 @@
   font-weight: 400;
   font-size: 23px;
   line-height: 120%;
-  text-decoration: none;
   color: #ffffff;
-  transform: rotate(90deg);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  // transform: rotate(90deg);
+  // flex: none;
+  // order: 0;
+  // flex-grow: 0;
 }
 
 .scrollDownImage {
-  position: absolute;
+  // position: absolute;
   z-index: 2;
-  top: 890px;
-  right: 96.22px;
+  transform: rotate(-90deg);
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  align-self: center;
+  // top: 890px;
+  // right: 96.22px;
 }
 
 .vector1 {
@@ -357,6 +444,225 @@
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .iam2 {
+    font-size: 4.45vw !important;
+    top: 203px !important;
+  }
+  .name {
+    font-size: 6vw !important;
+  }
+
+  // .jobTitle {
+  //   font-size: 4.5vw !important;
+  // }
+}
+
+@media (max-width: 1080px) {
+  .iam2 {
+    font-size: 4.25vw !important;
+    top: 203px !important;
+  }
+  .name {
+    font-size: 5.75vw !important;
+  }
+
+  .jobTitle {
+    font-size: 3.75vw !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contentHeader {
+    margin-left: 0px !important;
+  }
+
+  .iam2 {
+    top: 200px !important;
+    font-size: 4vw !important;
+  }
+
+  .name {
+    font-size: 5.25vw !important;
+  }
+
+  .scrollContainer {
+    top: 60vw !important;
+    right: 0px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .jobTitle {
+    font-size: 3.5vw !important;
+  }
+
+  .iam2 {
+    top: 195px !important;
+  }
+
+  .scrollContainer {
+    right: -25px !important;
+  }
+}
+
+@media (max-width: 775px) {
+  .jobTitle {
+    font-size: 3.4vw !important;
+  }
+
+  .name {
+    font-size: 5.2vw !important;
+  }
+
+  .socialMediaEmail {
+   font-size: 20px;
+  }
+
+  .scrollDown {
+    font-size: 20px !important;
+    margin-right: -4px !important;
+  }
+}
+
+@media (max-width: 740px) {
+
+  .iam2 {
+    font-size: 3.8vw !important;
+  }
+
+  .jobTitle {
+    font-size: 3.25vw !important;
+  }
+
+  .name {
+    font-size: 4.9vw !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .jobTitle {
+    font-size: 3.2vw !important;
+  }
+
+  .name {
+    font-size: 4.8vw !important;
+  }
+}
+
+@media (max-width: 664px) {
+  .name {
+    font-size: 4.6vw !important;
+  }
+
+  .jobTitle {
+    font-size: 3vw !important;
+  }
+
+  .iam2 {
+    font-size: 3.4vw !important;
+  }
+}
+
+@media (max-width: 612px) {
+  .name {
+    font-size: 4.2vw !important;
+  }
+  .iam2 {
+    font-size: 2.75vw !important;
+  }
+  .jobTitle {
+    font-size: 2.8vw !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    position: relative;
+}
+
+  .scrollContainer {
+    display: none !important;
+  }
+
+  .contentHeader {
+    flex-direction: column !important;
+  }
+
+  .mainPortrait {
+    height: fit-content !important;
+    width: 80vw !important;
+
+  }
+
+  .myMainImage {
+    height: 74.64vw !important;
+    width: 80vw !important;
+  }
+
+  .headline {
+    margin-top: 22px !important;
+    padding-left: 32px !important;
+  }
+
+  .name {
+    font-size: 45px !important;
+  }
+
+  .jobTitle {
+    font-size: 29px !important;
+  }
+
+  .iam2 {
+    display: none !important;
+    font-size: 32px !important;
+    top: 500px !important;
+    right: 412px !important;
+  }
+
+  .iam2Mobile {
+    display: flex !important;
+    font-size: 32px !important;
+  }
+
+  .letsTalkButton {
+    margin-top: 26px !important;
+  }
+
+  .fixedMenu {
+    display: none !important;
+  }
+
+  .fixedMenuMobile {
+    display: flex !important;
+  }
+
+  .socialMedia {
+    position: absolute;
+    top: 674px;
+    left: -58px !important;
+  }
+
+  .socialMediaEmail {
+    display: none !important;
+  }
+}
+
+// @media (max-width: 860px) {
+//   .rotatedText {
+//     font-size: 3.75vw !important;
+//   }
+//   .name {
+//     font-size: 6vw !important;
+//   }
+
+//   .jobTitle {
+//     font-size: 3.5vw !important;
+//   }
+// }
+
+// FIRST ATTEMPT
+/*
 @media (max-width: 1300px) {
   .iam {
     font-size: 4.5vw !important;
@@ -501,3 +807,4 @@
     height: 467.43px !important;
   }
 }
+*/

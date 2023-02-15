@@ -88,13 +88,41 @@ a {
   // animation: glow 1s ease-in-out infinite alternate;
 }
 
-
-
 .logoImage {
   margin-left: 0 !important;
 }
 
-@media (max-width: 600) {
+@media (max-width: 950px) {
+  .menuContainer {
+    margin-right: 50px !important;
+    a {
+      font-size: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .menuContainer {
+    a {
+      font-size: 16px !important;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+    }
+  }
+  .logoImage {
+    width: 225px !important;
+  }
+
+  .logoLinkClass {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentMenu {
+    position: unset !important;
+  }
 
   .fixedMenu {
     display: none !important;
@@ -102,6 +130,6 @@ a {
 
   .fixedMenuMobile {
     display: flex !important;
+    width: 100vw;
   }
-
 }

@@ -41,11 +41,11 @@ export class AppComponent {
       navigator.userAgent.match(/BlackBerry/i) ||
       navigator.userAgent.match(/Windows Phone/i)
     ) {
-      menuContainer.classList.add("d-none");
-      menuContainer.setAttribute("display", "none !important");
-      menuMobile.classList.remove("d-none");
-      contentHeader.setAttribute("flex-direction", "column");
-      contentHeader.setAttribute("z-index", "2");
+      // menuContainer.classList.add("d-none");
+      // menuContainer.setAttribute("display", "none !important");
+      // menuMobile.classList.remove("d-none");
+      // contentHeader.setAttribute("flex-direction", "column");
+      // contentHeader.setAttribute("z-index", "2");
     } else {
       // test
       // menuContainer.classList.add("d-none");

@@ -1,5 +1,5 @@
 .contentFooter {
-  z-index: 2;
+  // z-index: 2;
   padding-left: var(--left-102);
   position: relative;
   height: fit-content; // alternatively: height: var(--height-footer);
@@ -83,6 +83,45 @@
   margin-left: 42px;
   z-index: 1;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+  .contentFooter {
+    padding-left: calc(var(--left-102) / 4);
+  }
+
+  .copyrightText {
+    font-size: 20px !important;
+  }
+
+  .logoImage {
+    width: 175px !important;
+    height: 30px !important;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .socialMedia {
+    margin-right: 50px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .copyrightText {
+    font-size: 18px !important;
+  }
+
+  .logoImage {
+    width: 125px !important;
+    height: 20px !important;
+    object-fit: cover;
+  }
+
+  .socialMediaImages {
+    margin-left: 21px !important;
+  }
 }
 
 @media (max-width: 600px) {
