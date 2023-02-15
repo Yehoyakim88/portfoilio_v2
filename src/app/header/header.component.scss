@@ -353,7 +353,10 @@
 }
 
 .socialMedia {
-  position: relative;
+  position: absolute;
+  // top: 812px;
+  top: 56.39vw;
+  left: -58px;
   margin-top: 112px;
   z-index: 1;
   display: flex;
