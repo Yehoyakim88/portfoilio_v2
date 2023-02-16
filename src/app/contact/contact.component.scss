@@ -5,7 +5,10 @@
   // background-color: orange;
   display: flex;
   flex-direction: column;
-  margin-left: 88px;
+  
+  // margin-left: 100px;   // before edit margin-left: 88px;
+  // margin-right: 100px;
+  margin-right: 6.94vw;
   // justify-content: center;
   // align-items: center;
   // font-size: 80px;
@@ -19,16 +22,16 @@
 // }
 
 .contactHeader {
-  position: absolute;
-  top: var(--height-menu);
+  position: relative;
+  top: calc(var(--height-menu) + 100px);
   // left: var(--left-102);
-  left: 0px;
+  left: -28px;
   display: flex;
   align-items: center;
 }
 
 .contactHeaderLine {
-  width: var(--width-line-5);
+  width: 56px;// before edit width: var(--width-line-5);
   height: 0px;
   border: 3px solid #4b47ff;
   border-top-right-radius: 8px;
@@ -36,8 +39,11 @@
 }
 
 .contactHeaderText {
+  position: absolute;
+  left: 106px;
   width: 376px;
   height: var(--height-contactHeaderText);
+  // margin-left: 50px;
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: 700;
@@ -60,16 +66,17 @@
 .contactMainSection {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   margin-top: calc(var(--height-contactHeaderText) + 85px + var(--height-menu));
-  // margin-left: var(--left-102);                                                  // old values
-  margin-left: 56px;
+  // margin-left: 100px;// before edit margin-left: 56px;
+  margin-left: 6.94vw;
 }
 
 .contactDescriptions {
   display: flex;
   flex-direction: column;
   color: white;
-  // margin-top: 85px;
+  width: 32.847vw;
 }
 
 .contactDescParagraph {
@@ -78,7 +85,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  width: 473px;
+  // width: 473px;
 }
 
 .invitationContainer {
@@ -108,20 +115,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-left: 90px;
+  // align-items: flex-end;
+  // margin-left: 90px;
   // margin-right: 80px;
 }
 
 .singleLineInput {
   padding: 7.5px 25px;
-  width: 567px;
-  // width: 517px;
+  // width: 567px;
+  width: 39.375vw;
   height: 35px;
   margin-bottom: 35px;
   background: #141d2f;
-  /* Style 1/style 1 b -blues/blues 1 */
-
   border: 1px solid #4b47ff;
   border-radius: 10px;
   font-family: "Poppins";
@@ -129,12 +134,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
-
-  /* White */
-
   color: #ffffff;
-
   &:hover {
     border: 1px solid #00bee8;
   }
@@ -142,17 +142,11 @@
 
 .multiLineInput {
   padding: 15px 25px;
-  // gap: 10px;
-  // isolation: isolate;
-  width: 567px;
+  // width: 567px;
+  width: 39.375vw;
   height: 202px;
   margin-bottom: 35px;
-
-  /* Style 1/Syle 1 a - green purple/Blue bg */
-
   background: #141d2f;
-  /* Style 1/style 1 b -blues/blues 1 */
-
   border: 1px solid #4b47ff;
   border-radius: 10px;
   font-family: "Poppins";
@@ -160,12 +154,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
-
-  /* White */
-
   color: #ffffff;
-
   &:hover {
     border: 1px solid #00bee8;
   }
@@ -241,3 +230,68 @@
 //   width: 98.675vw;
 //   border: 2px solid #00bee8;
 // }
+
+.d-none {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  .contactDescriptions {
+    width: 30vw; // for screen-width > 1200px: 32.847vw;
+  }
+
+  .singleLineInput {
+    width: 35vw;// for screen-width > 1200px: 39.375vw;
+  }
+
+  .multiLineInput {
+    width: 35vw;// for screen-width > 1200px: 39.375vw
+  }
+}
+
+@media (max-width: 600px) {
+  .contactHeaderText {
+    top: -25px;
+    font-size: 45px !important;
+    width:fit-content !important;
+  }
+
+  .contactHeaderLine {
+    // position: absolute !important;
+    // top: 20px;
+  }
+
+  .contactMainSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactInputs {
+    align-items: center;
+  }
+
+  .contactRightSide {
+    margin-top: 45px !important;
+  }
+
+  .contactDescriptions {
+    width: 48vw !important;
+  }
+
+  .singleLineInput {
+    width: 48vw !important;
+  }
+
+  .multiLineInput {
+    width: 48vw !important;
+  }
+
+  .sendMessageButton {
+    margin-bottom: 75px !important;
+  }
+
+  .goUpButton {
+    margin-top: 0px !important;
+    margin-bottom: 48px !important;
+  }
+}

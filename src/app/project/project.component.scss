@@ -1,7 +1,8 @@
 .contentProject {
     position: relative;
     height: fit-content;
-    margin-left: 225px;
+    // margin-left: 225px;
+    margin-left: 15.625vw;
 }
 
 .aProject {
@@ -25,8 +26,10 @@
   }
   
   .projectPreviewImage {
+    margin-left: 6.94vw;
     // width: 400px;
-    height: 300px;
+    // height: 300px;
+    height:20.833vw;
     z-index: 1;
     // height: 400px;
     object-fit: cover;
@@ -35,7 +38,8 @@
   .descriptionContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    // margin-left: 100px;
+    margin-left: 6.94vw;
     // padding-right: 40px;
   }
   
@@ -46,7 +50,8 @@
   }
   
   .projectTitle {
-    width: 196px;
+    width: 26.042vw;
+    // width: 196px;
     height: 42.82px;
     font-family: "Poppins";
     font-style: normal;
@@ -58,7 +63,8 @@
   }
   
   .projectTechnologies {
-    width: 488px;
+    width: 26.042vw;
+    // width: 488px;
     height: 28px;
     font-family: "Poppins";
     font-style: normal;
@@ -71,9 +77,11 @@
   }
   
   .projectDescription {
-    width: 375px;
-    height: 57px;
+    width: 26.042vw;
+    // width: 375px;
+    // height: 57px;
     margin-right: 40px;
+    margin-bottom: 0px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -87,7 +95,9 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 35px;
+    justify-content: space-between;
+    width: 26.042vw;
   }
   
   .liveTestButton {
@@ -99,7 +109,8 @@
     padding: 15px 30px;
     gap: 10px;
   
-    width: 152px;
+    // width: 152px;
+    width: 10.4vw;
     height: 58px;
   
     /* Style 1/style 1 b -blues/blues 1 */
@@ -107,7 +118,7 @@
     background: #4b47ff;
     border-radius: 10px;
     border: 0;
-    margin-right: 43px;
+    // margin-right: 43px;
     &:hover {
       cursor: pointer;
       background-color: #00bee8;
@@ -144,7 +155,8 @@
     padding: 15px 30px;
     gap: 10px;
   
-    width: 137px;
+    // width: 137px;
+    width: 10.4vw;
     height: 58px;
   
     /* Style 1/style 1 b -blues/blues 2 */
@@ -152,7 +164,9 @@
     border: 1px solid #00bee8;
     border-radius: 10px;
     background: none;
-    margin-left: 43px;
+    // margin-left: 43px;
+    // margin-left: 5.9vw;
+
     &:hover {
       cursor: pointer;
       background-color: #00bee8;
@@ -161,5 +175,23 @@
   
   .gitHubText {
     width: 77px !important;
+    font-size: 23px;
   }
   
+  @media (max-width: 950px) {
+    .liveTestButton {
+      height: 40px !important;
+    }
+
+    .gitHubButton {
+      height: 40px !important;
+    }
+
+    .gitHubText {
+      font-size: 16px !important;
+    }
+
+    .liveTestText {
+      font-size: 16px !important;
+    }
+  }

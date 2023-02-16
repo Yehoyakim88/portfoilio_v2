@@ -58,14 +58,16 @@
 
 .dropDownMenu {
   position: fixed;
+  // position: absolute;
   z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: calc(100vh - var(--height-menu));
-  position: absolute;
-  top: 110px;
+  
+  // top: 110px;
+  top: 0px;
   right: 0px;
   padding-top: 205px;
   padding-bottom: 205px;
