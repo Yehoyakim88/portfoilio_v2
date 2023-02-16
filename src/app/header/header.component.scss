@@ -651,6 +651,21 @@
   }
 }
 
+@media (max-width: 515px) {
+  .iam2Mobile {
+    font-size: 6vw !important;
+  }
+
+  .name {
+    font-size: 8.5vw !important;
+  }
+
+  .jobTitle {
+    font-size: 5.4vw !important;
+  }
+
+}
+
 // @media (max-width: 860px) {
 //   .rotatedText {
 //     font-size: 3.75vw !important;

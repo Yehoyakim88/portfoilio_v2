@@ -45,6 +45,9 @@
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
+  &:hover {
+    color:#00bee8;
+  }
 }
 
 .imprintLinkMobile {
@@ -55,6 +58,9 @@
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 16px;
+  &:hover {
+    color:#00bee8;
+  }
 }
 
 .copyrightText {
@@ -132,12 +138,17 @@
     justify-content: unset !important;
   }
 
+  .logoImage {
+    width: unset !important;
+    height: 50px !important;
+  }
+
   .copyrightText {
     width: 240px !important;
     height: 28px !important;
     font-size: 23px !important;
     text-align: center !important;
-    margin-top: 55px !important;
+    margin-top: 56px !important;
   }
 
   .imprintLink {

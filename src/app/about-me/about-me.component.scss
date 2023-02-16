@@ -220,9 +220,14 @@
     margin-top: 110px !important;
     margin-left: 0px !important;
     height: unset !important;
+    width: unset !important;
     // margin-left: calc(-100vw / 2 + 0px / 2) !important;
     // margin-right: calc(-100vw / 2 + 0px / 2) !important;
     // width: unset !important;
+  }
+
+  .aboutMeText {
+    width: unset !important;
   }
 
   .personalThings {
