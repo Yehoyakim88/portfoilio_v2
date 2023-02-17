@@ -79,7 +79,7 @@
   }
   
   .projectDescription {
-    width: 26.042vw;
+    width: 40vw; // before edit: width: 26.042vw;
     // width: 375px;
     // height: 57px;
     // margin-right: 40px;
@@ -99,7 +99,9 @@
     align-items: center;
     margin-top: 35px;
     justify-content: space-between;
-    width: 26.042vw;
+    // width: 26.042vw;
+    // width: fit-content;
+    height: fit-content;
   }
   
   .liveTestButton {
@@ -112,11 +114,11 @@
     gap: 10px;
   
     // width: 152px;
-    width: 10.4vw;
-    height: 58px;
-  
-    /* Style 1/style 1 b -blues/blues 1 */
-  
+    // width: 10.4vw;
+    width: fit-content;
+    height: fit-content;
+    
+    margin-right: 8.0956vw;  // margin-right: 116px; 
     background: #4b47ff;
     border-radius: 10px;
     border: 0;
@@ -158,8 +160,10 @@
     gap: 10px;
   
     // width: 137px;
-    width: 10.4vw;
-    height: 58px;
+    // width: 10.4vw;
+    width: fit-content;
+    height: fit-content;
+    // height: 58px;
   
     /* Style 1/style 1 b -blues/blues 2 */
   
@@ -180,6 +184,16 @@
     font-size: 23px;
   }
 
+  @media (max-width: 900px) {
+    .aProject {
+      flex-direction: column !important;
+    }
+
+    .projectPreviewImage {
+      margin-bottom: 35px !important;
+    }
+  }
+/*
   @media (max-width: 1010px) {
     .projectTitle {
       font-size: 28px !important;// before edit: font-size: 32px;
@@ -228,5 +242,5 @@
     .projectTechnologies {
       font-size: 18px !important;// before edit: font-size: 20px;
     }
-
   }
+  */
