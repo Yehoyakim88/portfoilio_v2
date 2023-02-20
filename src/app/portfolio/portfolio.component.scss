@@ -1,12 +1,6 @@
 .contentPortfolio {
   position: relative;
-  // height: var(--height-portfolio);
   display: flex;
-  // margin-left: 172px;
-  // margin-left: 11.944vw;
-  // margin-right: 125px;
-  // width: 100%;
-  // margin-right: 100px;
 }
 
 .portfolioContainer {
@@ -14,8 +8,6 @@
   flex-direction: column;
   margin-top: var(--height-menu);
   width: 100%;
-  // margin-left: 380px;
-  // margin-right: 200px;
 }
 
 .headerContainer {
@@ -24,26 +16,18 @@
   right: 0px;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   justify-content: flex-end;
-  // margin-left: 88px;
 }
 
 .portfolioHeader {
-  // width: 389px;
-  // height: 108px;
   margin-left: 36px;
   margin-right: 42px;
-
   display: flex;
   align-items: center;
-
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: 700;
-  // font-size: 90px;
   font-size: 9vw;
-
   line-height: 120%;
   text-align: center;
   color: #ffffff;
@@ -61,10 +45,6 @@
 }
 
 .subHeaderMobile {
-  // position: relative;
-  // top: 80px;
-  // left: 80px;
-  // display: none;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -72,24 +52,13 @@
   line-height: 120%;
   text-align: center;
   display: flex;
-  // align-self: flex-start;
   color: #ffffff;
   margin-top: 35px;
-  // margin-left: 145px; // 7.56944vw + 36px
-  // margin-left: 15.278vw;
-  // width: 69.2vw;
 }
 
 .headerSubHeader {
   display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
-
-// .line4 {
-//   // width: 484px;
-//   width: 33.61vw;
-// }
 
 .linesRight {
   position: relative;
@@ -111,10 +80,6 @@
   border: 3px solid #4b47ff;
   border-radius: 4px 0px 0px 4px;
 }
-
-// .line6 {
-//   width: 7.56944vw;
-// }
 
 .line4Mobile {
   display: none;
@@ -152,7 +117,6 @@
   width: 428.59px;
   height: 951.44px;
   right: 0px;
-  // top: 1500px;
   top: 1550px;
 }
 
@@ -190,51 +154,4 @@
   .headerContainer {
     right: -28px !important;
   }
-
-  // .headerSubHeader {
-  //   flex-direction: row !important;
-  // }
-
-  // .headerContainer {
-  //   position: relative !important;
-  //   margin-left: 0px !important;
-  //   flex-direction: column !important;
-  //   width: fit-content;
-  //   right: 0px !important;
-  // }
-
-  // .headerSubHeader {
-  //   flex-direction: row !important;
-  // }
-
-  // .subHeader {
-  //   display: none !important;
-  // }
-
-  // .subHeaderMobile {
-  //   display: flex !important;
-  //   // align-self: flex-start;
-  //   top: 100px;
-  //   position: relative;
-  //   text-align: center;
-  // }
-
-  // .line6 {
-  //   display: none !important;
-  // }
-
-  // .line4 {
-  //   display: none !important;
-  // }
-
-  // .line4Mobile {
-  //   display: flex !important;
-  //   // position: absolute;
-  //   width: 75px !important;
-  //   // right: -70px !important;
-  // }
-
-  // .line6Mobile {
-  //   display: flex !important;
-  // }
 }

@@ -80,7 +80,6 @@
   writing-mode: vertical-lr;
   text-align: center;
   transform: rotate(-180deg);
-  // text-indent: -12px;
 }
 
 .iam2Mobile {
@@ -145,13 +144,6 @@
   transform: rotate(270deg);
 }
 
-.personShadow {
-  position: absolute;
-  top: 221.62px;
-  left: 12px;
-}
-
-// settings adopted from figma therefore this class name
 .personShadowFigma {
   position: absolute;
   height: 48.96vw;

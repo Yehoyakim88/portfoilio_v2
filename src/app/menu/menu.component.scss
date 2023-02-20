@@ -3,9 +3,7 @@
 .contentMenu {
     position: fixed;
     z-index: 3;
-    // width: 100vw;
     height: var(--height-menu);
-    // background-color: dimgray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +12,6 @@
 }
 
 .fixedMenu {
-  // position: fixed;
-  // top: 0;
   display: flex;
   z-index: 3;
   justify-content: space-between;
@@ -58,21 +54,17 @@
 
 .dropDownMenu {
   position: fixed;
-  // position: absolute;
   z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: calc(100vh - var(--height-menu));
-  
-  // top: 110px;
   top: 0px;
   right: 0px;
   padding-top: 205px;
   padding-bottom: 205px;
   background: #424856;
-  // opacity: 0.5;
 }
 .dropdownLink {
   text-decoration: none;
