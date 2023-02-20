@@ -2,7 +2,6 @@
   font-family: "Poppins";
   display: flex;
   flex-direction: column;
-  //added from test code
   margin-left: 28px;
   margin-right: 28px;
   margin-bottom: 100px;
@@ -10,7 +9,6 @@
 
 .contentHeader {
   position: relative;
-  // height: var(--height-header);
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -19,16 +17,12 @@
 }
 
 .mainImage {
-  // display: none;
   z-index: 1;
-  // height: 705px;
   height: 600px;
-  // width: 500px; // originally 646px
   object-fit: cover;
 }
 
 .myMainImage {
-  // position: relative;
   width: 42.86vw;
   height: 48.96vw;
   object-fit: cover;
@@ -46,21 +40,13 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   margin-top: 188px;
   height: fit-content;
-  // align-items: flex-start;
 }
 
 .introduceMeText {
   display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
   align-items: center;
-  // font-family: "Poppins";
-  // font-size: 64px;
-  // font-weight: 400;
-  // color: #ffff;
   height: fit-content;
 }
 
@@ -74,10 +60,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  // font-size: 64px;
   font-size: 5.25vw;
-  // font-size: 7em;
-  // line-height: 120%;
   color: #ffffff;
   writing-mode: vertical-lr;
   text-align: center;
@@ -92,7 +75,6 @@
   right: 8px;
   color: #ffffff;
   font-weight: 400;
-  // font-size: 4.45vw;
   font-size: 4.65vw;
   line-height: 120%;
   writing-mode: vertical-lr;
@@ -106,7 +88,6 @@
   z-index: 2;
   color: #ffffff;
   font-weight: 400;
-  // font-size: 4.45vw;
   font-size: 4.65vw;
   line-height: 120%;
   writing-mode: vertical-lr;
@@ -116,24 +97,17 @@
 
 .myName {
   z-index: 2;
-  // width: 640px;
-  // width: fit-content;
-  // height: 108px;
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: 700;
-  // font-size: 90px;
   font-size: 7vw;
-  // font-size: 7em;
   line-height: 120%;
   color: #ffffff;
 }
 
 .name {
-  // z-index: 2;
   font-family: "Poppins Bold";
   font-weight: 700;
-  /* font-size: 90px; */
   font-size: 6.25vw;
   line-height: 120%;
   color: #ffffff;
@@ -142,34 +116,23 @@
 .profession {
   z-index: 2;
   margin-top: -10px;
-  // width: 619px;
-  // width: 76px;
-  // height: 70px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  // font-size: 58px;
   font-size: 5vw;
-  // font-size: 4em;
   line-height: 120%;
   color: #4b47ff;
 }
 
 .jobTitle {
-  // z-index:2;
   font-weight: 400;
-  // font-size: 58px;
   font-size: 4.0278vw;
   line-height: 120%;
   color: #4b47ff;
 }
 
 .rotateLeft90 {
-  // display: none;
-  // margin-top: 60px;
-  // width: 178px;
   height: 100px;
-  // height: fit-content;
   z-index: 2;
   font-family: "Poppins";
   font-style: normal;
@@ -177,13 +140,9 @@
   font-size: 64px;
   line-height: 120%;
   color: #ffffff;
-  // transform: rotate(-90deg);
-  // writing-mode:horizontal-tb;
   text-align: center;
   transform-origin: center;
   transform: rotate(270deg);
-
-  // transform-origin: center center;
 }
 
 .personShadow {
@@ -195,12 +154,7 @@
 // settings adopted from figma therefore this class name
 .personShadowFigma {
   position: absolute;
-  // left: 12px;
-  // top: 221.62px;
-  // top: 176px;
-  // height: 705px;
   height: 48.96vw;
-  // width: 705px;
   object-fit: cover;
 }
 
@@ -211,7 +165,6 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-  // padding: 15px 15px 15px 0px;
   padding: 15px 30px;
   margin-top: 44px;
   width: 165px;
@@ -233,8 +186,6 @@
     line-height: 120%;
     color: #ffffff;
     text-decoration: none;
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -254,9 +205,7 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-  // padding: 15px 15px 15px 0px;
   padding: 15px 30px;
-  // margin-top: 44px;
   width: 165px;
   height: 58px;
   background: #00bee8;
@@ -276,8 +225,6 @@
     line-height: 120%;
     color: #ffffff;
     text-decoration: none;
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -292,12 +239,9 @@
 
 .scrollContainer {
   position: absolute;
-  // top: 765px;
   top: 53.125vw;
   z-index: 2;
   align-self: flex-end;
-  // display: flex;
-  // transform: rotate(90deg);
   &:hover {
     cursor: pointer;
   }
@@ -310,10 +254,7 @@
 
 .scrollDown {
   cursor: pointer;
-  // position: absolute;
   z-index: 2;
-  // top: 800px;
-  // right: 36px;
   margin-right: 8px;
   width: 133px;
   height: 28px;
@@ -323,22 +264,15 @@
   font-size: 23px;
   line-height: 120%;
   color: #ffffff;
-  // transform: rotate(90deg);
-  // flex: none;
-  // order: 0;
-  // flex-grow: 0;
 }
 
 .scrollDownImage {
-  // position: absolute;
   z-index: 2;
   transform: rotate(-90deg);
   width: 16px;
   height: 16px;
   object-fit: cover;
   align-self: center;
-  // top: 890px;
-  // right: 96.22px;
 }
 
 .vector1 {
@@ -351,7 +285,6 @@
 
 .socialMedia {
   position: absolute;
-  // top: 812px;
   top: 56.39vw;
   left: -58px;
   margin-top: 112px;
@@ -398,11 +331,7 @@
   left: -100px;
   right: 0;
   z-index: 1;
-  // width: 100vw;
   height: 1079px;
-  // background-image: url("./../../assets/img/line.png");
-  // background-repeat: round;
-  // background-size: cover;
 }
 
 .lineboxFigma {
@@ -411,9 +340,6 @@
   left: 19.93%;
   right: -80.64%;
   top: 345.09px;
-
-  /* Style 1/Syle 1 a - green purple/Gradient */
-
   background: linear-gradient(
     165.69deg,
     #1a2743 37.75%,
@@ -428,9 +354,6 @@
   left: -0.14%;
   right: 0%;
   top: -26px;
-
-  /* Style 1/Syle 1 a - green purple/Gradient b */
-
   background: radial-gradient(
       102.53% 81.55% at 46.74% 3.94%,
       #1a2743 0.37%,
@@ -452,10 +375,6 @@
   .name {
     font-size: 6vw !important;
   }
-
-  // .jobTitle {
-  //   font-size: 4.5vw !important;
-  // }
 }
 
 @media (max-width: 1080px) {
@@ -662,164 +581,3 @@
   }
 
 }
-
-// @media (max-width: 860px) {
-//   .rotatedText {
-//     font-size: 3.75vw !important;
-//   }
-//   .name {
-//     font-size: 6vw !important;
-//   }
-
-//   .jobTitle {
-//     font-size: 3.5vw !important;
-//   }
-// }
-
-// FIRST ATTEMPT
-/*
-@media (max-width: 1300px) {
-  .iam {
-    font-size: 4.5vw !important;
-  }
-  .myName {
-    font-size: 6vw !important;
-  }
-  .profession {
-    font-size: 4.5vw !important;
-  }
-}
-
-@media (max-width: 1100px) {
-  .iam {
-    font-size: 3.8vw !important;
-  }
-  .myName {
-    font-size: 5vw !important;
-  }
-  .profession {
-    font-size: 4.25vw !important;
-  }
-}
-
-@media (max-width: 1025px) {
-  .iam {
-    font-size: 3.5vw !important;
-  }
-  .myName {
-    font-size: 4.75vw !important;
-  }
-  .profession {
-    font-size: 4vw !important;
-  }
-}
-
-
-
-
-
-@media (max-width: 1000px) {
-  .profession {
-    font-size: 3vw !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .contentHeader {
-    // flex-direction: column !important;
-    margin-left: 0 !important;
-    margin-top: 0px !important;
-  }
-
-  .headline {
-    z-index: 2;
-    margin-top: 22px !important;
-    // height: 164px !important;
-  }
-
-  .mainImage {
-    height: var(--height-main-image-mobile) !important;
-    width: 556px !important;
-  }
-
-  .personShadowFigma {
-    height: 447.82px !important;
-    // width: unset !important;
-    // width: 100vw !important;
-    width: unset !important;
-  }
-
-  // .introduceMeText {
-  //   width: unset !important;
-  //   height: 54px !important;
-  //   font-size: unset !important;
-  // }
-
-  // .rotateLeft90 {
-  //   font-size: 32px !important;
-  //   margin-top: 30px !important;
-  //   width: unset !important;
-  //   height: unset !important;
-  // }
-
-  // .myName {
-  //   font-size: 29px !important;
-  //   width: unset !important;
-  //   height: 54px !important;
-  //   margin-bottom: 0px !important;
-  //   margin-top: 5px !important;
-  // }
-
-  // .profession {
-  //   font-size: 29px !important;
-  //   width: unset !important;
-  // }
-
-  .letsTalkButton {
-    display: none !important;
-    margin-top: 26px !important;
-    width: 133px !important;
-    height: 49px !important;
-    align-self: unset !important;
-    margin-left: 40px !important;
-  }
-
-  .letsTalkButtonMobile {
-    display: flex !important;
-  }
-
-  .scrollContainer {
-    display: none !important;
-  }
-
-  .socialMediaEmail {
-    display: none !important;
-  }
-
-  .vector1 {
-    width: 64px !important;
-    position: absolute;
-    left: -28px;
-  }
-
-  .socialMedia {
-    margin-top: 55px !important;
-  }
-
-  .socialMediaImageMobile {
-    margin-left: 84px !important;
-  }
-
-  .linebox {
-    // position: initial;
-    width: 556px !important;
-    // width: unset !important;
-    // height: 600px !important;
-    // top: calc(126px - var(--height-menu) - var(--height-main-image-mobile));
-    top: calc(372px - var(--height-menu));
-    left: 0px !important;
-    // width: 626.76px !important;
-    height: 467.43px !important;
-  }
-}
-*/
