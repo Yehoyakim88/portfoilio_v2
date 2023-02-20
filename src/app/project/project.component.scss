@@ -1,167 +1,203 @@
 .contentProject {
-    position: relative;
-    height: fit-content;
+  position: relative;
+  height: fit-content;
+  z-index: 2;
 }
 
 .aProject {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 200px;
+}
+
+.aProjectReverse {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 200px;
+}
+
+.projectPreviewImage {
+  height: 200px;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionContainerLeft {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10.4167vw; // equals 150px
+}
+
+.descriptionContainerRight {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10.4167vw; // equals 150px
+}
+
+.descriptionContainerReverse {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  width: 26.042vw;
+  height: 42.82px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 15px;
+  color: #4b47ff;
+}
+
+.projectTechnologies {
+  height: 28px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 120%;
+  margin-bottom: 15px;
+  color: #00bee8;
+}
+
+.projectDescription {
+  margin-bottom: 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.projectButtons {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  height: fit-content;
+}
+
+.liveTestButton {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 6.945vw;
+  background: #4b47ff;
+  border-radius: 10px;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #00bee8;
   }
-  
+}
+
+.liveTestText {
+  width: 92px;
+  height: 28px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.gitHubButton {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #00bee8;
+  border-radius: 10px;
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #00bee8;
+  }
+}
+
+.gitHubText {
+  width: 77px !important;
+  font-size: 23px;
+}
+
+@media (max-width: 900px) {
+  .aProject {
+    flex-direction: column !important;
+    align-items: center;
+    margin-bottom: 102px !important;
+  }
+
   .aProjectReverse {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 200px;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    margin-bottom: 102px !important;
   }
-  
+
   .projectPreviewImage {
-    height: 200px;
-    z-index: 1;
-    object-fit: cover;
+    margin-bottom: 35px !important;
   }
-  
-  .descriptionContainer {
-    display: flex;
-    flex-direction: column;
+
+  .projectTitle {
+    width: unset !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .aProject {
+    margin-bottom: 300px !important;
+  }
+
+  .aProjectReverse {
+    margin-bottom: 300px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .descriptionContainerRight {
+    width: 74vw;
+    align-items: flex-start;
   }
 
   .descriptionContainerLeft {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10.4167vw; // equals 150px
+    width: 74vw;
+    align-items: flex-start;
   }
 
-  .descriptionContainerRight {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10.4167vw; // equals 150px
-  }
-  
-  .descriptionContainerReverse {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .projectTitle {
-    width: 26.042vw;
-    height: 42.82px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 120%;
-    margin-bottom: 15px;
-    color: #4b47ff;
-  }
-  
-  .projectTechnologies {
-    height: 28px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-    margin-bottom: 15px;
-    color: #00bee8;
-  }
-  
-  .projectDescription {
-    margin-bottom: 0px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #ffffff;
-    text-align: justify;
-  }
-  
   .projectButtons {
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    margin-top: 35px;
-    height: fit-content;
+    width: 74vw;
+    justify-content: space-between;
   }
-  
+
   .liveTestButton {
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    gap: 10px;
-    width: fit-content;
-    height: fit-content;
-    margin-right: 6.945vw;
-    background: #4b47ff;
-    border-radius: 10px;
-    border: 0;
-    
-    &:hover {
-      cursor: pointer;
-      background-color: #00bee8;
-    }
+    width: 110px !important;
   }
-  
-  .liveTestText {
-    width: 92px;
-    height: 28px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 120%;
-    color: #ffffff;
-  }
-  
+
   .gitHubButton {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    gap: 10px;
-    width: fit-content;
-    height: fit-content;
-    border: 1px solid #00bee8;
-    border-radius: 10px;
-    background: none;
-
-    &:hover {
-      cursor: pointer;
-      background-color: #00bee8;
-    }
+    width: 110px !important;
   }
-  
-  .gitHubText {
-    width: 77px !important;
-    font-size: 23px;
-  }
-
-  @media (max-width: 900px) {
-    .aProject {
-      flex-direction: column !important;
-      align-items: center;
-      margin-bottom: 102px !important;
-    }
-
-    .aProjectReverse {
-      flex-direction: column-reverse !important;
-      align-items: center;
-      margin-bottom: 102px !important;
-    }
-
-    .projectPreviewImage {
-      margin-bottom: 35px !important;
-    }
-
-    .projectTitle {
-      width: unset !important;
-    }
-  }
+}

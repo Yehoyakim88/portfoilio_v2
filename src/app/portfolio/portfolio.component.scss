@@ -67,7 +67,7 @@
   width: 33.61vw;
   height: 0px;
   border: 3px solid #4b47ff;
-  border-radius: 4px 0px 0px 4px;
+  // border-radius: 4px 0px 0px 4px;
 }
 
 .linesLeft {
@@ -106,9 +106,18 @@
 
 .myPortfolioShadow {
   position: absolute;
-  width: 800px;
+  width: 636px;
   height: 950px;
   left: 0px;
+  top: 1078px;
+}
+
+.myPortfolioShadowMobile {
+  display: none;
+  position: absolute;
+  width: 636px;
+  height: 950px;
+  left: -80px;
   top: 1078px;
 }
 
@@ -130,6 +139,22 @@
   }
 }
 
+@media (max-width: 900px) {
+  .myPortfolioShadow {
+    top: 1260px !important;
+  }
+
+  .myPortfolioShadow2 {
+    top: 2210px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .myPortfolioShadow {
+    width: 75vw !important;
+  }
+}
+
 @media (max-width: 600px) {
   .portfolioContainer {
     margin-top: 0px !important;
@@ -142,16 +167,36 @@
   }
 
   .myPortfolioShadow {
-    width: unset !important;
     display: none !important;
   }
 
+  .myPortfolioShadowMobile {
+    display: flex !important;
+    top: 684px !important;
+    width: 100vw !important;
+    left: -43px !important;
+  }
+
   .myPortfolioShadow2 {
-    width: unset !important;
-    display: none !important;
+    right: -28px;
+    top: 2940px !important;
+    width: 71.433vw !important;
   }
 
   .headerContainer {
     right: -28px !important;
+  }
+
+  .linesLeft {
+    right: -66px !important;
+  }
+
+  .linesRight {
+    position: absolute !important;
+    width: 75px !important;
+  }
+
+  .testClass {
+    margin-right: 10px;
   }
 }

@@ -222,33 +222,42 @@
 @media (max-width: 600px) {
   .contactHeaderText {
     top: -25px;
+    left: 67px !important;
     font-size: 45px !important;
     width:fit-content !important;
   }
 
+  .contactSubHeaderText {
+    font-size: 23px !important;
+  }
+
   .contactMainSection {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 0px !important;
   }
 
   .contactInputs {
-    align-items: center;
+    // align-items: center;
+    width: fit-content;
   }
 
   .contactRightSide {
     margin-top: 45px !important;
+    align-items: flex-start;
   }
 
   .contactDescriptions {
-    width: 48vw !important;
+    width: 86vw !important;
+    text-align: justify;
   }
 
   .singleLineInput {
-    width: 48vw !important;
+    width: 70vw !important;
   }
 
   .multiLineInput {
-    width: 48vw !important;
+    width: 70vw !important;
   }
 
   .sendMessageButton {
