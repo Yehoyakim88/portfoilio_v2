@@ -2,12 +2,15 @@
 
 .contentMenu {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 3;
-    height: var(--height-menu);
+    // height: var(--height-menu);
+    height: 7.4325vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    // font-size: 80px;
     font-family: 'Poppins';
 }
 
@@ -17,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 109.03px;
+  // height: 109.03px;
   background-color: #141D2F;
 }
 
@@ -29,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 109.03px;
+  // height: 109.03px;
   background-color: #141D2F;
 }
 
@@ -65,7 +68,21 @@
   padding-top: 205px;
   padding-bottom: 205px;
   background: #424856;
+  opacity: 0.8;
 }
+
+.dropDownCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+
+
 .dropdownLink {
   text-decoration: none;
   color: #ffff;
